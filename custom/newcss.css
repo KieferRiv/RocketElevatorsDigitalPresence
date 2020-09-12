@@ -30,3 +30,16 @@
   color: red;
   border-color: #4d4d5a;
 }
+.nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+}
+.nav ul li:hover ul {
+    display: block;
+    
+}
+.nav ul li ul li a:hover {
+background-color: rgb(240, 10, 10);
+}
+ 

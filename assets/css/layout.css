@@ -1259,8 +1259,36 @@ section.dark.page-header .breadcrumb a {
 	}
 }
 
+/* service */
 
-
+nav ul li {
+	float: left;
+	list-style: none;
+	position: relative;
+}
+nav ul li a {
+	color: black;
+	display: block;
+	font-size: 16px;
+	padding: 24px 14px;
+}
+nav ul li ul {
+	display: none;
+	position: absolute;
+	background-color: white;
+	padding: 2px;
+	border-radius: 4px;
+}
+nav ul li:hover ul {
+	display: block;
+}
+nav ul li ul li a {
+	padding: 8px 14px;
+}
+nav ul li ul li a:hover {
+	padding: 8px 14px;
+	background-color:#f3f3f3;
+}
 /* options - like buttons */
 section.page-header ul.page-options {
 	position:absolute;
@@ -2850,7 +2878,7 @@ body.menu-vertical #mainMenu.sidebar-vertical .navbar-collapse>ul.nav.navbar-nav
 	}
 	#header.header-md #topNav #topMain>li>a {
 		height:70px;
-		line-height:70px;
+		line-height:normal;
 	}
 	@media only screen and (max-width: 992px) {
 		#header.header-md #topMain.nav-pills>li>a {
@@ -2902,7 +2930,7 @@ body.menu-vertical #mainMenu.sidebar-vertical .navbar-collapse>ul.nav.navbar-nav
 	}
 	#header.fixed #topNav #topMain>li>a {
 		height:60px;
-		line-height:60px;
+		line-height:normal;
 	}
 
 
