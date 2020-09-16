@@ -13,7 +13,7 @@
   background-color: #b30b0b;
   border-color: #b30b0b;
 }
-.btn-warning:active {
+button:active {
   background-color: #b30b0b;
 }
 #header {

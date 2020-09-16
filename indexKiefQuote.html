@@ -57,7 +57,7 @@
 		menu-vertical-hide		= hidden, open on click
 		
 		BACKGROUND IMAGE [together with .boxed class]
-		data-background="assets/images/_smarty/boxed_background/1.jpg"
+		data-background="assets/images//boxed_background/1.jpg"
 	-->
 	<body class="smoothscroll enable-animation">
 
@@ -106,7 +106,7 @@
 
 						<!-- Logo -->
 						<a class="logo float-left scrollTo" href="#top">
-							<img src="assets/images/_smarty/R2.png" alt="" />
+							<img src="assets/images/rocket/R2.png" alt="" />
 						</a>
 
 						<!-- 
@@ -136,7 +136,7 @@
 											Services</a>
 											<ul>
 												<li><a href="indexKief2.html">Residential</a></li>
-												<li><a href="indexKief3.html">Coorporate</a></li>
+												<li><a href="indexKief3.html">Corporate</a></li>
 											</ul>
 										
 									</li>
@@ -195,7 +195,7 @@
 						<p>Select the type of building</p>
 					   <form id="form-elevator">
                         <select id="elevatorSelection">
-                            <option value="" selected="selected"></option>
+                            <option value="" selected="selected">---select---</option>
                             <option value="form_name0">Residential</option>
                             <option value="form_name1">Commercial</option>
                             <option value="form_name2">Corporate</option>
@@ -209,12 +209,12 @@
 
 						  <form name="form_name0" id="form_name0" class="box form_name0">
 							<h2>Residential elevators</h2>
-							<label for="fname">number of appartment:</label>
-							<input type="number" id="appartmentNum" name="appartmentNum" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
+							<label for="fname">number of appartments:</label>
+							<input type="number" id="appartmentNum" name="appartmentNum" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
 							<label for="lname">number of floors(without basements):</label>
-							<input type="number" id="floorNum" name="floorNum" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
+							<input type="number" id="floorNum" name="floorNum" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
 							<label for="lname">number of basements:</label>
-							<input type="number" id="basementNum" class="DropChange" name="basementNum" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
+							<input type="number" id="basementNum" class="DropChange" name="basementNum" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
 							<span id="spanRes"></span>
 						  </form>
 
@@ -244,15 +244,15 @@
 						  <form name="form_name2" id="form_name2" class="box form_name2">
 							<h2>Corporate elevators</h2>
 							<label for="fname">Number of separate tenant companies:</label>
-							<input type="number" id="tenant" name="tenant" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
+							<input type="number" id="tenant" name="tenant" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
 							<label for="lname">number of floors(without basements):</label>
-							<input type="number" id="corpFloorNum" name="corpFloorNum" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
+							<input type="number" id="corpFloorNum" name="corpFloorNum" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
 							<label for="lname">number of basements:</label>
-							<input type="number" id="corpBasementNum" name="corpBasementNum" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
+							<input type="number" id="corpBasementNum" name="corpBasementNum" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
 							<label for="lname">number of parking spaces:</label>
-							<input type="number" id="corpParkNum" name="corpParkNum" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
+							<input type="number" id="corpParkNum" name="corpParkNum" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
 							<label for="lname">maximum number of occupants per floor:</label>
-							<input type="number" id="corpMax" class="DropChange" name="corpMax" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
+							<input type="number" id="corpMax" class="DropChange" name="corpMax" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
 							<span id="spanCorp"></span>
 						  </form>
 
@@ -262,17 +262,17 @@
 						  <form name="form_name3" id="form_name3" class="box form_name3">
 							<h2>Hybrid elevators</h2>
 							<label for="fname">Number of distinct companies:</label>
-							<input type="number" id="hybridCompanies" name="hybridCompanies" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
+							<input type="number" id="hybridCompanies" name="hybridCompanies" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
 							<label for="lname">number of floors(without basements):</label>
-							<input type="number" id="hybridFloorNum" name="hybridFloorNum" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
+							<input type="number" id="hybridFloorNum" name="hybridFloorNum" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
 							<label for="lname">number of basements:</label>
-							<input type="number" id="hybridBasementNum" name="hybridBasementNum" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
+							<input type="number" id="hybridBasementNum" name="hybridBasementNum" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
 							<label for="lname">number of parking spaces:</label>
-							<input type="number" id="hybridParkNum" name="hybridParkNum" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
+							<input type="number" id="hybridParkNum" name="hybridParkNum" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
 							<label for="lname">maximum number of occupants per floor:</label>
-							<input type="number" id="hybridMax" name="hybridMax" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>><br><br>
-							<label for="lname">number of hours of activity of the building:</label>
-							<input type="number" max="24" id="hybridHour" class="DropChange" name="hybridHour" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
+							<input type="number" id="hybridMax" name="hybridMax" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>><br><br>
+							<label for="lname">number of hours of activity of the building per day:</label>
+							<input type="number" max="24" id="hybridHour" class="DropChange" name="hybridHour" min="1" onkeypress='return event.charCode >= 48 && event.charCode <= 57'><br><br>
 							<span id="spanHyb"></span>
 						  </form>
 
@@ -291,14 +291,13 @@
 						 <input type="radio" id="price3" name="price" value="15400">
 						</div>
 					</div>
+					<div id=radioReset>
 					<p>cage cost: <span id="price">0</span>$</p>
-					<!--<p>cage cost: <span id="price2">0</span>$</p>
-					//<p>cage cost: <span id="price3">0</span>$</p>
-					<p>cage cost: <span id="price4">0</span>$</p>-->
-					<p>Standart installation fees: <span id="inPrice">0</span>$</p>
-					<p>Prenium installation fees: <span id="inPriceP">0</span>$</p>
-					<p>Excellium installation fees: <span id="inPriceE">0</span>$</p>
-					<p>Total Cost: <span id="totalCost">0</span>$</p>
+					<p>Standart installation fees: <span id="inPrice" value="standartfee">0</span>$</p>
+					<p>Prenium installation fees: <span id="inPriceP" value="preniumfee">0</span>$</p>
+					<p>Excellium installation fees: <span id="inPriceE" value="excelliumfee">0</span>$</p>
+					<!--<p>Total Cost: <span id="totalCost">0</span>$</p>-->
+					</div>
 				</div>
 			</section>
 			<!-- /CONTACT -->
@@ -418,15 +417,19 @@
       var optionValue = $(this).attr("value");
       if (optionValue) {
         $(".box").not("." + optionValue).hide();
-        $("." + optionValue).show();
+		$("." + optionValue).show();
+		$('.box').trigger("reset");
+		
       } else {
-        $(".box").hide();
+		$(".box").hide();
+	
       }
     });
   }).change();
 });
 		$('input').keyup(function(){
 			var commValue = Number($('#comElNum').val());
+			commValue = isNaN(commValue) ? '0' : commValue;
 			document.getElementById('spanCom').innerHTML = commValue +" lift cages";
 			
 		})
@@ -437,15 +440,15 @@
   
   		function changeListener(){
   		var value = this.value
-  		  console.log(value);
+  		
 		if(document.getElementById('elevatorSelection').value == "form_name0"){
 			
 			$(function() {
-		$(".DropChange").change(function(){
+		var callBack = (function(){
 			var valone = $('#appartmentNum').val();
 			var valFloor =$('#floorNum').val();
 			var valtwo = $('input[name="price"]:checked').val();
-			console.log(('elevatorSelection').value);
+			
 			var averagePerFloor = ((valone * 1) / (valFloor * 1));
 			
 			var elNumber0 = ((averagePerFloor * 1) / 6);
@@ -455,7 +458,8 @@
 			var colNum = Math.ceil(colNum0);
 
 			var totalCages =((elNumber * 1) * (colNum * 1));
-			console.log(totalCages)
+			totalCages = isNaN(totalCages) ? '0' : totalCages;
+			
 			document.getElementById('spanRes').innerHTML = totalCages + " lift cages" + '\xa0\xa0\xa0' + colNum + " required columns"
 			
 			//price residential//
@@ -468,37 +472,40 @@
 			var totalfee = ((totalCages * 1) * (Price1 * 1) * 0.1);
 			totalfee = isNaN(totalfee) ? '0.00' : totalfee;
 			$('#inPrice').text(totalfee);
-			
+			$('#totalCost').text((totalfee * 1) + (total * 1));
 
 			var Price2 = $('input[id="price2"]:checked').val();
 			var totalfee2 = ((totalCages * 1) * (Price2 * 1) * 0.13);
 			totalfee2 = isNaN(totalfee2) ? '0.00' : totalfee2;
 			$('#inPriceP').text(totalfee2);
-			$('#totalCost').text((totalfee2 * 1) + (total * 1))
+			
 
 			var Price3 = $('input[id="price3"]:checked').val();
 			var totalfee3 = ((totalCages * 1) * (Price3 * 1) * 0.16);
 			totalfee3 = isNaN(totalfee3) ? '0.00' : totalfee3;
 			$('#inPriceE').text(totalfee3);
-			$('#totalCost').text((totalfee3 * 1) + (total * 1))
-
+			
 			
 			});
+			$("input").change(callBack);
+			$("input").keypress(callBack);
 		})
 		}
 		else if(document.getElementById('elevatorSelection').value == "form_name1"){
 			$(function() {
-		$(".DropChange").change(function(){
+		var callBack2 = (function(){
 			var valone = $('#comElNum').val();
 			var valtwo = $('input[name="price"]:checked').val();
 			var total = ((valone * 1) * (valtwo * 1));
-			
+			total = isNaN(total) ? '0.00' : total;
 			$('#price').text(total);
 		});
+		$("input").change(callBack2);
+			$("input").keypress(callBack2);
 		});
 
 		$(function() {
-		$(".DropChange").change(function(){
+		var callBack4 = (function(){
 			var valone = $('#comElNum').val();
 			
 			var valtwo = $('input[id="price1"]:checked').val();
@@ -516,11 +523,14 @@
 			totalfee3 = isNaN(totalfee3) ? '0.00' : totalfee3;
 			$('#inPriceE').text(totalfee3);
 		});
+		$("input").change(callBack4);
+			$("input").keypress(callBack4);
+		
 		});
 		}
 		else if(document.getElementById('elevatorSelection').value == "form_name3"){
 			$(function() {
-		$(".DropChange").change(function(){
+		var callBack1 = (function(){
 			var valFloor = $('#hybridFloorNum').val();
 			var valBas = $('#hybridBasementNum').val();
 			var valOc = $('#hybridMax').val();
@@ -528,6 +538,7 @@
 			console.log(valFloor)
 			var reqEl0 = (OcNumber * 1) / (1000);
 			var reqEl = Math.ceil(reqEl0);
+			reqEl = isNaN(reqEl) ? '0' : reqEl;
 
 			var elCol0 = ((valFloor * 1) + (valBas * 1)) / (20);
 			var elCol = Math.ceil(elCol0);
@@ -567,11 +578,13 @@
 			$('#totalCost').text((totalfee3 * 1) + (total * 1))
 
 		});
+		$("input").change(callBack1);
+			$("input").keypress(callBack1);
 		});
 		}
 		else if(document.getElementById('elevatorSelection').value == "form_name2"){
 			$(function() {
-		$(".DropChange").change(function(){
+		 var callBack = (function(){
 			var valFloor = $('#corpFloorNum').val();
 			var valBas = $('#corpBasementNum').val();
 			var valOc = $('#corpMax').val();
@@ -579,6 +592,7 @@
 			console.log(valFloor)
 			var reqEl0 = (OcNumber * 1) / (1000);
 			var reqEl = Math.ceil(reqEl0);
+			reqEl = isNaN(reqEl) ? '0' : reqEl;
 
 			var elCol0 = ((valFloor * 1) + (valBas * 1)) / (20);
 			var elCol = Math.ceil(elCol0);
@@ -595,6 +609,7 @@
 			+ '\xa0\xa0\xa0' + elCol + " required columns" +'\xa0\xa0\xa0' + elPerCol + " elvators per column" + '\xa0\xa0\xa0'+totalEl + " Total elevators";
 			//var total = ((valone * 1) * (valtwo * 1));
 			//price hybrid//
+			
 			var valtwo = $('input[name="price"]:checked').val();
 			var total = ((totalEl * 1) * (valtwo * 1));
 			$('#price').text(total);
@@ -616,12 +631,17 @@
 			totalfee3 = isNaN(totalfee3) ? '0.00' : totalfee3;
 			$('#inPriceE').text(totalfee3);
 			$('#totalCost').text((totalfee3 * 1) + (total * 1))
-
+			
+			
 		});
+		$("input").change(callBack);
+			$("input").keypress(callBack);
 		});
-		}
-		  }
 		
+		}
+		
+		  }
+		 
 
 
 		</script>

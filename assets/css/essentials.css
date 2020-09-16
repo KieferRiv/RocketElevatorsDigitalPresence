@@ -2838,7 +2838,7 @@ blockquote cite:after {
   background-color: #01FF70 !important; }
 
 .bg-yellow {
-  background-color: #FFDC00 !important; }
+  background-color: #0c0c0b !important; }
 
 .bg-orange {
   background-color: #FF851B !important; }
@@ -2890,7 +2890,7 @@ blockquote cite:after {
   color: #01FF70 !important; }
 
 .text-yellow {
-  color: #FFDC00 !important; }
+  color: #0f0f0e !important; }
 
 .text-orange {
   color: #FF851B !important; }
@@ -2946,7 +2946,7 @@ blockquote cite:after {
   border-color: #01FF70 !important; }
 
 .border-yellow {
-  border-color: #FFDC00 !important; }
+  border-color: #080808 !important; }
 
 .border-orange {
   border-color: #FF851B !important; }
@@ -3425,7 +3425,7 @@ img.mfp-img {
 
 /* mouse grab icon */
 .grabbing { 
-    cursor:url(../images/_smarty/grabbing.png) 8 8, move;
+    cursor:url(../images/rocket/) 8 8, move;
 }
 
 /* fix */
@@ -5121,7 +5121,7 @@ body:not(.device-touch) .btn.btn-reveal span {
 /* button colors */
 .btn-red { background-color: #C02942; color: #FFF !important; }
 .btn-teal { background-color: #53777A; color: #FFF !important; }
-.btn-yellow { background-color: #ECD078; color: #333 !important; }
+.btn-yellow { background-color: #ECD078; color: rgb(7, 6, 6) !important; }
 .btn-green { background-color: #59BA41; color: #FFF !important; }
 .btn-brown { background-color: #774F38; color: #FFF !important; }
 .btn-aqua { background-color: #40C0CB; color: #FFF !important; }
@@ -7154,13 +7154,13 @@ section.dark .box-inner h6>a:hover {
 
 	/* yellow */
 	.box-yellow>div:nth-child(1) {
-		background-color:#e3a42d;
+		background-color:#050505;
 	}
 	.box-yellow>div:nth-child(2) {
-		background-color:#eaba60;
+		background-color:#0f0f0e;
 	}
 	.box-yellow>div:nth-child(3) {
-		background-color:#eec882;
+		background-color:#070606;
 	}
 	.box-yellow>div:nth-child(4) {
 		background-color:#f2d7a4;
@@ -7393,7 +7393,7 @@ span.badge-orange,
 span.badge-yellow,
 span.badge-yellow,
 .list-group-item.active>.badge.badge-yellow {
-  background: #f1c40f !important;
+  background: #0a0a0a !important;
 }
 
 span.badge-purple,
