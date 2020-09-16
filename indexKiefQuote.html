@@ -296,7 +296,7 @@
 					<p>Standart installation fees: <span id="inPrice" value="standartfee">0</span>$</p>
 					<p>Prenium installation fees: <span id="inPriceP" value="preniumfee">0</span>$</p>
 					<p>Excellium installation fees: <span id="inPriceE" value="excelliumfee">0</span>$</p>
-					<!--<p>Total Cost: <span id="totalCost">0</span>$</p>-->
+					<p>Total Cost: <span id="totalCost">0</span>$</p>
 					</div>
 				</div>
 			</section>
@@ -472,7 +472,7 @@
 			var totalfee = ((totalCages * 1) * (Price1 * 1) * 0.1);
 			totalfee = isNaN(totalfee) ? '0.00' : totalfee;
 			$('#inPrice').text(totalfee);
-			$('#totalCost').text((totalfee * 1) + (total * 1));
+			
 
 			var Price2 = $('input[id="price2"]:checked').val();
 			var totalfee2 = ((totalCages * 1) * (Price2 * 1) * 0.13);
@@ -484,6 +484,10 @@
 			var totalfee3 = ((totalCages * 1) * (Price3 * 1) * 0.16);
 			totalfee3 = isNaN(totalfee3) ? '0.00' : totalfee3;
 			$('#inPriceE').text(totalfee3);
+
+			$('#totalCost').text((totalfee * 1) + (totalfee2 * 1) + (totalfee3 * 1) + (total * 1));
+			
+  		
 			
 			
 			});
@@ -499,13 +503,8 @@
 			var total = ((valone * 1) * (valtwo * 1));
 			total = isNaN(total) ? '0.00' : total;
 			$('#price').text(total);
-		});
-		$("input").change(callBack2);
-			$("input").keypress(callBack2);
-		});
+		
 
-		$(function() {
-		var callBack4 = (function(){
 			var valone = $('#comElNum').val();
 			
 			var valtwo = $('input[id="price1"]:checked').val();
@@ -522,9 +521,12 @@
 			var totalfee3 = ((valone * 1) * (val4 * 1) * 0.16);
 			totalfee3 = isNaN(totalfee3) ? '0.00' : totalfee3;
 			$('#inPriceE').text(totalfee3);
+
+			$('#totalCost').text((totalfee * 1) + (totalfee2 * 1) + (totalfee3 * 1) + (total * 1));
+
 		});
-		$("input").change(callBack4);
-			$("input").keypress(callBack4);
+		$("input").change(callBack2);
+			$("input").keypress(callBack2);
 		
 		});
 		}
@@ -557,25 +559,28 @@
 			//price hybrid//
 			var valtwo = $('input[name="price"]:checked').val();
 			var total = ((totalEl * 1) * (valtwo * 1));
+			total = isNaN(total) ? '0.00' : total;
 			$('#price').text(total);
 
 			var Price1 = $('input[id="price1"]:checked').val();
 			var totalfee = ((totalEl * 1) * (Price1 * 1) * 0.1);
 			totalfee = isNaN(totalfee) ? '0.00' : totalfee;
 			$('#inPrice').text(totalfee);
-			$('#totalCost').text((totalfee * 1) + (total * 1))
+			
 
 			var Price2 = $('input[id="price2"]:checked').val();
 			var totalfee2 = ((totalEl * 1) * (Price2 * 1) * 0.13);
 			totalfee2 = isNaN(totalfee2) ? '0.00' : totalfee2;
 			$('#inPriceP').text(totalfee2);
-			$('#totalCost').text((totalfee2 * 1) + (total * 1))
+			
 
 			var Price3 = $('input[id="price3"]:checked').val();
 			var totalfee3 = ((totalEl * 1) * (Price3 * 1) * 0.16);
 			totalfee3 = isNaN(totalfee3) ? '0.00' : totalfee3;
 			$('#inPriceE').text(totalfee3);
-			$('#totalCost').text((totalfee3 * 1) + (total * 1))
+			
+
+			$('#totalCost').text((totalfee * 1) + (totalfee2 * 1) + (totalfee3 * 1) + (total * 1));
 
 		});
 		$("input").change(callBack1);
@@ -612,27 +617,28 @@
 			
 			var valtwo = $('input[name="price"]:checked').val();
 			var total = ((totalEl * 1) * (valtwo * 1));
+			total = isNaN(total) ? '0.00' : total;
 			$('#price').text(total);
 
 			var Price1 = $('input[id="price1"]:checked').val();
 			var totalfee = ((totalEl * 1) * (Price1 * 1) * 0.1);
 			totalfee = isNaN(totalfee) ? '0.00' : totalfee;
 			$('#inPrice').text(totalfee);
-			$('#totalCost').text((totalfee * 1) + (total * 1))
+			
 
 			var Price2 = $('input[id="price2"]:checked').val();
 			var totalfee2 = ((totalEl * 1) * (Price2 * 1) * 0.13);
 			totalfee2 = isNaN(totalfee2) ? '0.00' : totalfee2;
 			$('#inPriceP').text(totalfee2);
-			$('#totalCost').text((totalfee2 * 1) + (total * 1))
+			
 
 			var Price3 = $('input[id="price3"]:checked').val();
 			var totalfee3 = ((totalEl * 1) * (Price3 * 1) * 0.16);
 			totalfee3 = isNaN(totalfee3) ? '0.00' : totalfee3;
 			$('#inPriceE').text(totalfee3);
-			$('#totalCost').text((totalfee3 * 1) + (total * 1))
 			
 			
+			$('#totalCost').text((totalfee * 1) + (totalfee2 * 1) + (totalfee3 * 1) + (total * 1));
 		});
 		$("input").change(callBack);
 			$("input").keypress(callBack);
